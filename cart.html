@@ -35,37 +35,37 @@
                     <tr>
                         <th scope="row"><img src="images/cat-green.jpg" class="img-fluid img-table" alt="..."></th>
                         <td class="align-middle">Cat</td>
-                        <td class="align-middle"><span class="" id="id">2</span></td>
+                        <td class="align-middle"><span class="" id="qty">1</span></td>
                         <td class="align-middle">
-                            <button type="button" class="btn btn-outline-secondary btn-xs p-2">-</button>
-                            <button type="button" class="btn btn-outline-secondary btn-xs">+</button>
+                            <button type="button" class="btn btn-outline-secondary btn-xs p-2" onclick="subtractItem1()">-</button>
+                            <button type="button" class="btn btn-outline-secondary btn-xs" onclick="addItem1()">+</button>
                         </td>
-                        <td class="align-middle">9.99</td>
-                        <td class="align-middle">19.98</td>
+                        <td class="align-middle"id="price">9.99</td>
+                        <td class="align-middle" id="totalItems">9.99</td>
                         <td class="align-middle"><button class="btn btn-outline-danger btn-remove">Remove</button></td>
                     </tr>
                     <tr>
                         <th scope="row"><img src="images/dog-smiles.jpg" class="img-fluid img-table" alt="..."></th>
-                        <td class="align-middle">Cat</td>
-                        <td class="align-middle"><span class="" id="id">2</span></td>
+                        <td class="align-middle">Dog</td>
+                        <td class="align-middle"><span class="" id="qty2">1</span></td>
                         <td class="align-middle">
-                            <button type="button" class="btn btn-outline-secondary btn-xs p-2">-</button>
-                            <button type="button" class="btn btn-outline-secondary btn-xs">+</button>
+                            <button type="button" class="btn btn-outline-secondary btn-xs p-2" onclick="subtractItem2()">-</button>
+                            <button type="button" class="btn btn-outline-secondary btn-xs" onclick="addItem2()">+</button>
                         </td>
-                        <td class="align-middle">9.99</td>
-                        <td class="align-middle">19.98</td>
+                        <td class="align-middle" id="price2">10.99</td>
+                        <td class="align-middle" id="totalItems2">10.99</td>
                         <td class="align-middle"><button class="btn btn-outline-danger btn-remove">Remove</button></td>
                     </tr>
                     <tr>
                         <th scope="row"><img src="images/owl-eyes.jpg" class="img-fluid img-table" alt="..."></th>
                         <td class="align-middle">Cat</td>
-                        <td class="align-middle"><span class="" id="id">2</span></td>
+                        <td class="align-middle"><span class="" id="qty3">1</span></td>
                         <td class="align-middle">
-                            <button type="button" class="btn btn-outline-secondary btn-xs p-2">-</button>
-                            <button type="button" class="btn btn-outline-secondary btn-xs">+</button>
+                            <button type="button" class="btn btn-outline-secondary btn-xs p-2" onclick="subtractItem3()">-</button>
+                            <button type="button" class="btn btn-outline-secondary btn-xs" onclick="addItem3()">+</button>
                         </td>
-                        <td class="align-middle">9.99</td>
-                        <td class="align-middle">19.98</td>
+                        <td class="align-middle" id="price3">14.99</td>
+                        <td class="align-middle" id="totalItems3">14.99</td>
                         <td class="align-middle"><button class="btn btn-outline-danger btn-remove">Remove</button></td>
                     </tr>
                     <tr> 
@@ -73,7 +73,7 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <th>Total: <span id="id">99.99</span></th>        
+                        <th>Total: <span id="cartTotal">35.97 </span></th>        
                     </tr>    
                 </tbody>
             </table>
