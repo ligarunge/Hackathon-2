@@ -30,3 +30,90 @@ for (let i = 0; i < removeButton.length; i++) {
    buttonClicked.parentElement.parentElement.remove();
   })
 }
+
+function addItem1() {
+  let defaultQty = parseFloat(document.getElementById('qty').innerText);
+  let newQty = defaultQty + 1;
+  document.getElementById('qty').innerText = newQty;
+  let price = parseFloat(document.getElementById('price').innerText);
+  let itemsTotal = newQty * price;
+  document.getElementById('totalItems').innerText = itemsTotal;
+  let defaultTotal = parseFloat(document.getElementById('cartTotal').innerText);
+  let newTotal = defaultTotal + price;
+  document.getElementById('cartTotal').innerText = newTotal;
+}
+function subtractItem1() {
+  let defaultQty = parseFloat(document.getElementById('qty').innerText);
+  let newQty = defaultQty - 1;
+  if (newQty >= 0) {
+  document.getElementById('qty').innerText = newQty;
+  let price = parseFloat(document.getElementById('price').innerText);
+  let itemsTotal = newQty * price;
+  document.getElementById('totalItems').innerText = itemsTotal;
+  let defaultTotal = parseFloat(document.getElementById('cartTotal').innerText);
+  let newTotal = defaultTotal - price;
+  document.getElementById('cartTotal').innerText = newTotal;
+  }
+  else {
+    document.getElementById('qty').innerText = 0;
+  }
+}
+
+
+function addItem2() {
+  let defaultQty = parseFloat(document.getElementById('qty2').innerText);
+  let newQty = defaultQty + 1;
+  document.getElementById('qty2').innerText = newQty;
+  let price = parseFloat(document.getElementById('price2').innerText);
+  let itemsTotal = newQty * price;
+  document.getElementById('totalItems2').innerText = itemsTotal;
+  let defaultTotal = parseFloat(document.getElementById('cartTotal').innerText);
+  let newTotal = defaultTotal + price;
+  document.getElementById('cartTotal').innerText = newTotal;
+}
+function subtractItem2() {
+  let defaultQty = parseFloat(document.getElementById('qty2').innerText);
+  let newQty = defaultQty - 1;
+  if (newQty >= 0) {
+  document.getElementById('qty2').innerText = newQty;
+  let price = parseFloat(document.getElementById('price2').innerText);
+  let itemsTotal = newQty * price;
+  document.getElementById('totalItems2').innerText = itemsTotal;
+  let defaultTotal = parseFloat(document.getElementById('cartTotal').innerText);
+  let newTotal = defaultTotal - price;
+  document.getElementById('cartTotal').innerText = newTotal;
+  }
+  else {
+    document.getElementById('qty2').innerText = 0;
+  }
+}
+
+function addItem3() {
+  let defaultQty = parseFloat(document.getElementById('qty3').innerText);
+  let newQty = defaultQty + 1;
+  document.getElementById('qty3').innerText = newQty;
+  let price = parseFloat(document.getElementById('price3').innerText);
+  let itemsTotal = newQty * price;
+  document.getElementById('totalItems3').innerText = itemsTotal;
+  let defaultTotal = parseFloat(document.getElementById('cartTotal').innerText);
+  let newTotal = defaultTotal + price;
+  document.getElementById('cartTotal').innerText = newTotal;
+}
+function subtractItem3() {
+  let defaultQty = parseFloat(document.getElementById('qty3').innerText);
+  let newQty = defaultQty - 1;
+  if (newQty >= 0) {
+  document.getElementById('qty3').innerText = newQty;
+  let price = parseFloat(document.getElementById('price3').innerText);
+  let itemsTotal = newQty * price;
+  document.getElementById('totalItems3').innerText = itemsTotal;
+  let defaultTotal = parseFloat(document.getElementById('cartTotal').innerText);
+  let newTotal = defaultTotal - price;
+  document.getElementById('cartTotal').innerText = newTotal;
+  }
+  else {
+    document.getElementById('qty3').innerText = 0;
+  }
+}
+
+
