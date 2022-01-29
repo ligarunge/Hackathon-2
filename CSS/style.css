@@ -43,6 +43,11 @@ color: rgba(21, 82, 117, 0.788);
     margin-bottom: 40px;
 }
 
+#categoriesImg {
+    width: 350px;
+    height: 150px;
+}
+
 #categoryImg {
     width: 200px;
     height: 200px
