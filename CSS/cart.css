@@ -25,12 +25,19 @@
   }
   
   /* Style each tab content individually */
-  #Products {background-color:rgb(192, 243, 209);}
+  #Products {background-color:rgb(195, 207, 224);}
   #Address {background-color:rgb(247, 241, 221);}
   #Summary {background-color:rgb(225, 225, 247);}
 
   .img-table {
     display: block; 
-    width: 7rem; 
+    width: 6rem; 
     height: auto;
+}
+.btn-xs {
+    
+    width:2rem;
+    height:2rem;
+    text-align:center;
+    line-height:1em;   
 }
