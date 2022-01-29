@@ -21,3 +21,12 @@ function openTab(tabName, elmnt, color) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+const removeButton = document.getElementsByClassName('btn-remove');
+for (let i = 0; i < removeButton.length; i++) {
+  let button = removeButton[i];
+  button.addEventListener('click', function(event) {
+   let buttonClicked = event.target;
+   buttonClicked.parentElement.parentElement.remove();
+  })
+}
