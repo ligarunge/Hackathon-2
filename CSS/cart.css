@@ -1,0 +1,36 @@
+/* Style the tab buttons */
+.tablink {
+    background-color: #555;
+    color: white;
+    
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 33%;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  /* Set default styles for tab content */
+  .tabcontent {
+    color: rgb(12, 12, 12);
+    display: none;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  /* Style each tab content individually */
+  #Products {background-color:rgb(192, 243, 209);}
+  #Address {background-color:rgb(247, 241, 221);}
+  #Summary {background-color:rgb(225, 225, 247);}
+
+  .img-table {
+    display: block; 
+    width: 7rem; 
+    height: auto;
+}
