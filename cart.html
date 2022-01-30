@@ -48,7 +48,7 @@
             <div class="body-line"></div>
 
         </header>
-        <div class="main pt-4">
+        <div class="main pt-4 table-height">
         <button class="tablink rounded" onclick="openTab('Products', this, 'rgba(87, 120, 139, 0.788)')" id="defaultOpen">Products</button>
         <button class="tablink rounded" onclick="openTab('Address', this, 'rgba(87, 120, 139, 0.788)')">Address</button>
         <button class="tablink rounded" onclick="openTab('Summary', this, 'rgba(87, 120, 139, 0.788)')">Summary</button>
@@ -75,8 +75,8 @@
                             <button type="button" class="btn btn-outline-secondary btn-xs p-2" onclick="subtractItem1()">-</button>
                             <button type="button" class="btn btn-outline-secondary btn-xs" onclick="addItem1()">+</button>
                         </td>
-                        <td class="align-middle"id="price">9.99</td>
-                        <td class="align-middle" id="totalItems">9.99</td>
+                        <td class="align-middle price"id="price">9.99 €</td>
+                        <td class="align-middle" id="totalItems">9.99 €</td>
                         <td class="align-middle"><button class="btn btn-outline-danger btn-remove">Remove</button></td>
                     </tr>
                     <tr>
@@ -87,20 +87,20 @@
                             <button type="button" class="btn btn-outline-secondary btn-xs p-2" onclick="subtractItem2()">-</button>
                             <button type="button" class="btn btn-outline-secondary btn-xs" onclick="addItem2()">+</button>
                         </td>
-                        <td class="align-middle" id="price2">10.99</td>
-                        <td class="align-middle" id="totalItems2">10.99</td>
+                        <td class="align-middle price" id="price2">10.99 €</td>
+                        <td class="align-middle" id="totalItems2">10.99 €</td>
                         <td class="align-middle"><button class="btn btn-outline-danger btn-remove">Remove</button></td>
                     </tr>
                     <tr>
                         <th scope="row"><img src="images/owl-eyes.jpg" class="img-fluid img-table" alt="..."></th>
-                        <td class="align-middle">Cat</td>
+                        <td class="align-middle">Owl</td>
                         <td class="align-middle"><span class="" id="qty3">1</span></td>
                         <td class="align-middle">
                             <button type="button" class="btn btn-outline-secondary btn-xs p-2" onclick="subtractItem3()">-</button>
                             <button type="button" class="btn btn-outline-secondary btn-xs" onclick="addItem3()">+</button>
                         </td>
-                        <td class="align-middle" id="price3">14.99</td>
-                        <td class="align-middle" id="totalItems3">14.99</td>
+                        <td class="align-middle price" id="price3">14.99 €</td>
+                        <td class="align-middle" id="totalItems3">14.99 €</td>
                         <td class="align-middle"><button class="btn btn-outline-danger btn-remove">Remove</button></td>
                     </tr>
                     <tr> 
@@ -108,13 +108,13 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <th class="text-blue">Total: <span class="text-blue" id="cartTotal">35.97 </span></th>        
+                        <th class="text-blue h4">Total: <span class="text-blue display-6" id="cartTotal">35.97 €</span></th>        
                     </tr>    
                 </tbody>
             </table>
         </div>
 
-        <div id="Address" class="tabcontent table-height">
+        <div id="Address" class="tabcontent">
             <div class="row justify-content-between">
                 <div class="col-md-5">
                     <span class="row h6">Shipping address</span>
@@ -129,7 +129,7 @@
         </div>
 
 
-        <div id="Summary" class="tabcontent table-height">
+        <div id="Summary" class="tabcontent">
             <div class="row">
                 <div class="col-4">
 
@@ -138,11 +138,11 @@
                     <table class="table table-hover">
                         <thead>
                             <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Product</th>
-                                <th scope="col">Qty</th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Total</th>
+                                <th class="text-blue" scope="col"></th>
+                                <th class="text-blue" scope="col">Product</th>
+                                <th class="text-blue" scope="col">Qty</th>
+                                <th class="text-blue" scope="col">Price</th>
+                                <th class="text-blue" scope="col">Total</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -162,7 +162,7 @@
                             </tr>
                             <tr class="summaryProducts">
                                 <th scope="row"><img src="images/owl-eyes.jpg" class="img-fluid img-table" alt="..."></th>
-                                <td class="align-middle">Bird</td>
+                                <td class="align-middle">Owl</td>
                                 <td class="align-middle"><span class="" id="">1</span></td>
                                 <td class="align-middle">14.99</td>
                                 <td class="align-middle">14.99</td>
