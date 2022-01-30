@@ -28,7 +28,10 @@ for (let i = 0; i < removeButton.length; i++) {
   button.addEventListener('click', function(event) {
    let buttonClicked = event.target;
    buttonClicked.parentElement.parentElement.remove();
+   document.getElementsByClassName('summaryProducts')[i].remove();
+   
   })
+ 
 }
 
 function addItem1() {
@@ -36,7 +39,7 @@ function addItem1() {
   let newQty = defaultQty + 1;
   document.getElementById('qty').innerText = newQty;
   let price = parseFloat(document.getElementById('price').innerText);
-  let itemsTotal = newQty * price;
+  let itemsTotal = (newQty * price).toFixed(2);
   document.getElementById('totalItems').innerText = itemsTotal;
   let defaultTotal = parseFloat(document.getElementById('cartTotal').innerText);
   let newTotal = (defaultTotal + price).toFixed(2);
@@ -48,7 +51,7 @@ function subtractItem1() {
   if (newQty >= 0) {
   document.getElementById('qty').innerText = newQty;
   let price = parseFloat(document.getElementById('price').innerText);
-  let itemsTotal = newQty * price;
+  let itemsTotal = (newQty * price).toFixed(2);
   document.getElementById('totalItems').innerText = itemsTotal;
   let defaultTotal = parseFloat(document.getElementById('cartTotal').innerText);
   let newTotal = (defaultTotal - price).toFixed(2);
@@ -65,10 +68,10 @@ function addItem2() {
   let newQty = defaultQty + 1;
   document.getElementById('qty2').innerText = newQty;
   let price = parseFloat(document.getElementById('price2').innerText);
-  let itemsTotal = newQty * price;
+  let itemsTotal = (newQty * price).toFixed(2);
   document.getElementById('totalItems2').innerText = itemsTotal;
   let defaultTotal = parseFloat(document.getElementById('cartTotal').innerText);
-  let newTotal = defaultTotal + price;
+  let newTotal = (defaultTotal + price).toFixed(2);
   document.getElementById('cartTotal').innerText = newTotal;
 }
 function subtractItem2() {
@@ -77,10 +80,10 @@ function subtractItem2() {
   if (newQty >= 0) {
   document.getElementById('qty2').innerText = newQty;
   let price = parseFloat(document.getElementById('price2').innerText);
-  let itemsTotal = newQty * price;
+  let itemsTotal = (newQty * price).toFixed(2);
   document.getElementById('totalItems2').innerText = itemsTotal;
   let defaultTotal = parseFloat(document.getElementById('cartTotal').innerText);
-  let newTotal = defaultTotal - price;
+  let newTotal = (defaultTotal - price).toFixed(2);
   document.getElementById('cartTotal').innerText = newTotal;
   }
   else {
@@ -93,10 +96,10 @@ function addItem3() {
   let newQty = defaultQty + 1;
   document.getElementById('qty3').innerText = newQty;
   let price = parseFloat(document.getElementById('price3').innerText);
-  let itemsTotal = newQty * price;
+  let itemsTotal = (newQty * price).toFixed(2);
   document.getElementById('totalItems3').innerText = itemsTotal;
   let defaultTotal = parseFloat(document.getElementById('cartTotal').innerText);
-  let newTotal = defaultTotal + price;
+  let newTotal = (defaultTotal + price).toFixed(2);
   document.getElementById('cartTotal').innerText = newTotal;
 }
 function subtractItem3() {
@@ -105,10 +108,10 @@ function subtractItem3() {
   if (newQty >= 0) {
   document.getElementById('qty3').innerText = newQty;
   let price = parseFloat(document.getElementById('price3').innerText);
-  let itemsTotal = newQty * price;
+  let itemsTotal = (newQty * price).toFixed(2);
   document.getElementById('totalItems3').innerText = itemsTotal;
   let defaultTotal = parseFloat(document.getElementById('cartTotal').innerText);
-  let newTotal = defaultTotal - price;
+  let newTotal = (defaultTotal - price).toFixed(2);
   document.getElementById('cartTotal').innerText = newTotal;
   }
   else {
