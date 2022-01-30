@@ -49,58 +49,58 @@
 
         </header>
         <div class="main pt-4 table-height">
-        <button class="tablink rounded" onclick="openTab('Products', this, 'rgba(87, 120, 139, 0.788)')" id="defaultOpen">Products</button>
-        <button class="tablink rounded" onclick="openTab('Address', this, 'rgba(87, 120, 139, 0.788)')">Address</button>
-        <button class="tablink rounded" onclick="openTab('Summary', this, 'rgba(87, 120, 139, 0.788)')">Summary</button>
+        <button class="tablink rounded" onclick="openTab('Products', this, 'rgba(87, 120, 139, 0.788)')" id="defaultOpen"><h5>Products</h5></button>
+        <button class="tablink rounded" onclick="openTab('Address', this, 'rgba(87, 120, 139, 0.788)')"><h5>Address</h5></button>
+        <button class="tablink rounded" onclick="openTab('Summary', this, 'rgba(87, 120, 139, 0.788)')"><h5>Summary</h5></button>
 
         <div id="Products" class="tabcontent">
             <table class="table table-hover">
                 <thead class="border-blue">
                     <tr>
-                        <th class="text-blue" scope="col"></th>
-                        <th class="text-blue" scope="col">Product</th>
-                        <th class="text-blue" scope="col">Qty</th>
-                        <th class="text-blue" scope="col"></th>
-                        <th class="text-blue" scope="col">Price</th>
-                        <th class="text-blue" scope="col">Total</th>
-                        <th class="text-blue" scope="col"></th>
+                        <th class="text-blue h5" scope="col"></th>
+                        <th class="text-blue h5" scope="col">Product</th>
+                        <th class="text-blue h5" scope="col">Qty</th>
+                        <th class="text-blue h5" scope="col"></th>
+                        <th class="text-blue h5" scope="col">Price</th>
+                        <th class="text-blue h5" scope="col">Total</th>
+                        <th class="text-blue h5" scope="col"></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row"><img src="images/cat-green.jpg" class="img-fluid img-table" alt="..."></th>
+                        <th scope="row"><img src="images/cat-blue.jpg" class="img-fluid img-table rounded" alt="..."></th>
                         <td class="align-middle">Cat</td>
-                        <td class="align-middle "><span class="" id="qty">1</span></td>
+                        <td class="align-middle "><span class="h6" id="qty">1</span></td>
                         <td class="align-middle">
                             <button type="button" class="btn btn-outline-secondary btn-xs p-2" onclick="subtractItem1()">-</button>
                             <button type="button" class="btn btn-outline-secondary btn-xs" onclick="addItem1()">+</button>
                         </td>
-                        <td class="align-middle price"id="price">9.99 €</td>
-                        <td class="align-middle" id="totalItems">9.99 €</td>
+                        <td class="align-middle price"id="price">10.00 €</td>
+                        <td class="align-middle h6 totalItem" id="totalItems">10.00 €</td>
                         <td class="align-middle"><button class="btn btn-outline-danger btn-remove">Remove</button></td>
                     </tr>
                     <tr>
-                        <th scope="row"><img src="images/dog-smiles.jpg" class="img-fluid img-table" alt="..."></th>
+                        <th scope="row"><img src="images/dog-okei.jpg" class="img-fluid img-table rounded" alt="..."></th>
                         <td class="align-middle">Dog</td>
-                        <td class="align-middle"><span class="" id="qty2">1</span></td>
+                        <td class="align-middle"><span class="h6" id="qty2">1</span></td>
                         <td class="align-middle">
                             <button type="button" class="btn btn-outline-secondary btn-xs p-2" onclick="subtractItem2()">-</button>
                             <button type="button" class="btn btn-outline-secondary btn-xs" onclick="addItem2()">+</button>
                         </td>
-                        <td class="align-middle price" id="price2">10.99 €</td>
-                        <td class="align-middle" id="totalItems2">10.99 €</td>
+                        <td class="align-middle price" id="price2">12.00 €</td>
+                        <td class="align-middle h6 totalItem" id="totalItems2">12.00 €</td>
                         <td class="align-middle"><button class="btn btn-outline-danger btn-remove">Remove</button></td>
                     </tr>
                     <tr>
-                        <th scope="row"><img src="images/owl-eyes.jpg" class="img-fluid img-table" alt="..."></th>
+                        <th scope="row"><img src="images/owl.jpg" class="img-fluid img-table rounded" alt="..."></th>
                         <td class="align-middle">Owl</td>
-                        <td class="align-middle"><span class="" id="qty3">1</span></td>
+                        <td class="align-middle"><span class="h6" id="qty3">1</span></td>
                         <td class="align-middle">
                             <button type="button" class="btn btn-outline-secondary btn-xs p-2" onclick="subtractItem3()">-</button>
                             <button type="button" class="btn btn-outline-secondary btn-xs" onclick="addItem3()">+</button>
                         </td>
-                        <td class="align-middle price" id="price3">14.99 €</td>
-                        <td class="align-middle" id="totalItems3">14.99 €</td>
+                        <td class="align-middle price" id="price3">15.00 €</td>
+                        <td class="align-middle h6 totalItem" id="totalItems3">15.00 €</td>
                         <td class="align-middle"><button class="btn btn-outline-danger btn-remove">Remove</button></td>
                     </tr>
                     <tr> 
@@ -108,7 +108,8 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <th class="text-blue h4">Total: <span class="text-blue h2" id="cartTotal">35.97 €</span></th>        
+                        <td></td>
+                        <th class="text-blue h4">Total: <span class="text-blue h2" id="cartTotal">37.00 €</span></th>        
                     </tr>    
                 </tbody>
             </table>
@@ -117,12 +118,12 @@
         <div id="Address" class="tabcontent">
             <div class="row justify-content-between">
                 <div class="col-md-5">
-                    <span class="row h6 text-blue">Shipping address</span>
-                    <span class="row"><textarea name="" id="" cols="30" rows="10"></textarea></span>
+                    <span class="row h5 text-blue">Shipping address</span>
+                    <span class="row"><textarea name="" id="" cols="30" rows="10" placeholder="Antonijas iela 133"></textarea></span>
                 </div>
 
                 <div class="col-md-5">
-                    <span class="row h6 text-blue">Billing address</span>
+                    <span class="row h5 text-blue" id="enterBillingAddress">Billing address</span>
                     <span class="row"><textarea name="" id="" cols="30" rows="10"></textarea></span>
                 </div>
             </div>
@@ -137,12 +138,14 @@
         <div id="Summary" class="tabcontent">
             <div class="row">
                 <div class="col-4">
-                    <div><span class="row h6">Shipping address</span></div>
+                    <div><span class="row h5 text-blue">Shipping address</span></div>
                     <div><span class="row">Antonijas iela</span></div>
                     <div><span class="row">Riga</span></div>
                     <div><span class="row">Latvija</span></div>
                     <div><span class="row">LV-1022</span></div>
-                    <div><span class="row h6 mt-3">Billing address</span></div>
+                    <div><span class="row h5 text-blue mt-3" id="billingAddress">Billing address</span></div>
+                    <div><span class="row"></span></div>
+                    <div><span class="row"></span></div>
 
                     <div><img src="images/cat-shopping.png" class="img-fluid img-smallSum rounded" alt="..."></div>
                 </div>
@@ -150,40 +153,40 @@
                     <table class="table table-hover">
                         <thead>
                             <tr>
-                                <th class="text-blue" scope="col"></th>
-                                <th class="text-blue" scope="col">Product</th>
-                                <th class="text-blue" scope="col">Qty</th>
-                                <th class="text-blue" scope="col">Price</th>
-                                <th class="text-blue" scope="col">Total</th>
+                                <th class="text-blue h5" scope="col"></th>
+                                <th class="text-blue h5" scope="col">Product</th>
+                                <th class="text-blue h5" scope="col">Qty</th>
+                                <th class="text-blue h5" scope="col">Price</th>
+                                <th class="text-blue h5" scope="col">Total</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="summaryProducts" id="summaryFirstProduct">
-                                <th scope="row"><img src="images/cat-green.jpg" class="img-fluid img-table rounded" alt="..."></th>
+                                <th scope="row"><img src="images/cat-blue.jpg" class="img-fluid img-table rounded" alt="..."></th>
                                 <td class="align-middle">Cat</td>
-                                <td class="align-middle"><span class="" id="">1</span></td>
-                                <td class="align-middle">9.99</td>
-                                <td class="align-middle">9.99</td>
+                                <td class="align-middle"><span class="h6" id="summaryQty1">1</span></td>
+                                <td class="align-middle">10.00 €</td>
+                                <td class="align-middle h6" id="summaryItemsTotal1">10.00 €</td>
                             </tr>
                             <tr class="summaryProducts">
-                                <th scope="row"><img src="images/dog-smiles.jpg" class="img-fluid img-table rounded" alt="..."></th>
+                                <th scope="row"><img src="images/dog-okei.jpg" class="img-fluid img-table rounded" alt="..."></th>
                                 <td class="align-middle">Dog</td>
-                                <td class="align-middle"><span class="" id="">1</span></td>
-                                <td class="align-middle">10.99</td>
-                                <td class="align-middle">10.99</td>
+                                <td class="align-middle"><span class="h6" id="summaryQty2">1</span></td>
+                                <td class="align-middle">12.00 €</td>
+                                <td class="align-middle h6" id="summaryItemsTotal2">12.00 €</td>
                             </tr>
                             <tr class="summaryProducts">
-                                <th scope="row"><img src="images/owl-eyes.jpg" class="img-fluid img-table rounded" alt="..."></th>
+                                <th scope="row"><img src="images/owl.jpg" class="img-fluid img-table rounded" alt="..."></th>
                                 <td class="align-middle">Owl</td>
-                                <td class="align-middle"><span class="" id="">1</span></td>
-                                <td class="align-middle">14.99</td>
-                                <td class="align-middle">14.99</td>
+                                <td class="align-middle"><span class="h6" id="summaryQty3">1</span></td>
+                                <td class="align-middle">15.00 €</td>
+                                <td class="align-middle h6" id="summaryItemsTotal3">15.00 €</td>
                             </tr>
                             <tr> 
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <th colspan="2" class="text-blue h4">Total: <span class="text-blue h2" id="id">35.97</span></th>        
+                                <th colspan="2" class="text-blue h4">Total: <span class="text-blue h2" id="summaryCartTotal">37.00 €</span></th>        
                             </tr>                           
                         </tbody>
                     </table>
