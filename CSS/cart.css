@@ -48,3 +48,7 @@
 .text-blue {
   color: rgba(21, 82, 117, 0.788);
 }
+.border-blue {
+  border:1px rgba(21, 82, 117, 0.788)
+  
+}

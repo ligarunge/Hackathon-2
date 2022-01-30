@@ -54,8 +54,8 @@
         <button class="tablink rounded" onclick="openTab('Summary', this, 'rgba(87, 120, 139, 0.788)')">Summary</button>
 
         <div id="Products" class="tabcontent">
-            <table class="table table-hover table-height">
-                <thead>
+            <table class="table table-hover">
+                <thead class="border-blue">
                     <tr>
                         <th class="text-blue" scope="col"></th>
                         <th class="text-blue" scope="col">Product</th>
@@ -108,7 +108,7 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <th>Total: <span id="cartTotal">35.97 </span></th>        
+                        <th class="text-blue">Total: <span class="text-blue" id="cartTotal">35.97 </span></th>        
                     </tr>    
                 </tbody>
             </table>
@@ -146,32 +146,32 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr class="summaryProducts" id="summaryFirstProduct">
                                 <th scope="row"><img src="images/cat-green.jpg" class="img-fluid img-table" alt="..."></th>
                                 <td class="align-middle">Cat</td>
-                                <td class="align-middle"><span class="" id="id">2</span></td>
+                                <td class="align-middle"><span class="" id="">1</span></td>
                                 <td class="align-middle">9.99</td>
-                                <td class="align-middle">19.98</td>
+                                <td class="align-middle">9.99</td>
                             </tr>
-                            <tr>
-                                <th scope="row"><img src="images/cat-green.jpg" class="img-fluid img-table" alt="..."></th>
-                                <td class="align-middle">Cat</td>
-                                <td class="align-middle"><span class="" id="id">2</span></td>
-                                <td class="align-middle">9.99</td>
-                                <td class="align-middle">19.98</td>
+                            <tr class="summaryProducts">
+                                <th scope="row"><img src="images/dog-smiles.jpg" class="img-fluid img-table" alt="..."></th>
+                                <td class="align-middle">Dog</td>
+                                <td class="align-middle"><span class="" id="">1</span></td>
+                                <td class="align-middle">10.99</td>
+                                <td class="align-middle">10.99</td>
                             </tr>
-                            <tr>
-                                <th scope="row"><img src="images/cat-green.jpg" class="img-fluid img-table" alt="..."></th>
-                                <td class="align-middle">Cat</td>
-                                <td class="align-middle"><span class="" id="id">2</span></td>
-                                <td class="align-middle">9.99</td>
-                                <td class="align-middle">19.98</td>
+                            <tr class="summaryProducts">
+                                <th scope="row"><img src="images/owl-eyes.jpg" class="img-fluid img-table" alt="..."></th>
+                                <td class="align-middle">Bird</td>
+                                <td class="align-middle"><span class="" id="">1</span></td>
+                                <td class="align-middle">14.99</td>
+                                <td class="align-middle">14.99</td>
                             </tr>
                             <tr> 
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <th colspan="2">Total: <span id="id">99.99</span></th>        
+                                <th colspan="2">Total: <span id="id">35.97</span></th>        
                             </tr>                           
                         </tbody>
                     </table>
