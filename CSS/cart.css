@@ -1,6 +1,6 @@
 /* Style the tab buttons */
 .tablink {
-    background-color: #555;
+    background-color: rgba(21, 82, 117, 0.788);
     color: white;
     
     border: none;
@@ -13,7 +13,7 @@
   
   /* Change background color of buttons on hover */
   .tablink:hover {
-    background-color: #777;
+    background-color: rgba(87, 120, 139, 0.788);
   }
   
   /* Set default styles for tab content */
@@ -41,4 +41,10 @@
     background-color: lightyellow;
     text-align:center;
     line-height:1em;   
+}
+.table-height {
+  min-height: 30rem;
+}
+.text-blue {
+  color: rgba(21, 82, 117, 0.788);
 }
