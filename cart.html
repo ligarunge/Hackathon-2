@@ -108,7 +108,7 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <th class="text-blue h4">Total: <span class="text-blue display-6" id="cartTotal">35.97 €</span></th>        
+                        <th class="text-blue h4">Total: <span class="text-blue h2" id="cartTotal">35.97 €</span></th>        
                     </tr>    
                 </tbody>
             </table>
@@ -117,13 +117,18 @@
         <div id="Address" class="tabcontent">
             <div class="row justify-content-between">
                 <div class="col-md-5">
-                    <span class="row h6">Shipping address</span>
+                    <span class="row h6 text-blue">Shipping address</span>
                     <span class="row"><textarea name="" id="" cols="30" rows="10"></textarea></span>
                 </div>
 
                 <div class="col-md-5">
-                    <span class="row h6">Billing address</span>
+                    <span class="row h6 text-blue">Billing address</span>
                     <span class="row"><textarea name="" id="" cols="30" rows="10"></textarea></span>
+                </div>
+            </div>
+            <div class="row img-middle">
+                <div class="col">
+                <img src="images/cat-in-box.png" class="img-fluid img-small rounded" alt="...">
                 </div>
             </div>
         </div>
@@ -132,7 +137,14 @@
         <div id="Summary" class="tabcontent">
             <div class="row">
                 <div class="col-4">
+                    <div><span class="row h6">Shipping address</span></div>
+                    <div><span class="row">Antonijas iela</span></div>
+                    <div><span class="row">Riga</span></div>
+                    <div><span class="row">Latvija</span></div>
+                    <div><span class="row">LV-1022</span></div>
+                    <div><span class="row h6 mt-3">Billing address</span></div>
 
+                    <div><img src="images/cat-shopping.png" class="img-fluid img-smallSum rounded" alt="..."></div>
                 </div>
                 <div class="col-8">
                     <table class="table table-hover">
@@ -147,21 +159,21 @@
                         </thead>
                         <tbody>
                             <tr class="summaryProducts" id="summaryFirstProduct">
-                                <th scope="row"><img src="images/cat-green.jpg" class="img-fluid img-table" alt="..."></th>
+                                <th scope="row"><img src="images/cat-green.jpg" class="img-fluid img-table rounded" alt="..."></th>
                                 <td class="align-middle">Cat</td>
                                 <td class="align-middle"><span class="" id="">1</span></td>
                                 <td class="align-middle">9.99</td>
                                 <td class="align-middle">9.99</td>
                             </tr>
                             <tr class="summaryProducts">
-                                <th scope="row"><img src="images/dog-smiles.jpg" class="img-fluid img-table" alt="..."></th>
+                                <th scope="row"><img src="images/dog-smiles.jpg" class="img-fluid img-table rounded" alt="..."></th>
                                 <td class="align-middle">Dog</td>
                                 <td class="align-middle"><span class="" id="">1</span></td>
                                 <td class="align-middle">10.99</td>
                                 <td class="align-middle">10.99</td>
                             </tr>
                             <tr class="summaryProducts">
-                                <th scope="row"><img src="images/owl-eyes.jpg" class="img-fluid img-table" alt="..."></th>
+                                <th scope="row"><img src="images/owl-eyes.jpg" class="img-fluid img-table rounded" alt="..."></th>
                                 <td class="align-middle">Owl</td>
                                 <td class="align-middle"><span class="" id="">1</span></td>
                                 <td class="align-middle">14.99</td>
@@ -171,7 +183,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <th colspan="2">Total: <span id="id">35.97</span></th>        
+                                <th colspan="2" class="text-blue h4">Total: <span class="text-blue h2" id="id">35.97</span></th>        
                             </tr>                           
                         </tbody>
                     </table>

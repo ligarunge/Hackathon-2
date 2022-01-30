@@ -25,8 +25,8 @@
   }
   
   /* Style each tab content individually */
-  #Products {background-color:rgb(232, 237, 243);}
-  #Address {background-color:rgb(213, 211, 235);}
+  #Products {background-color:rgb(225, 225, 247);}
+  #Address {background-color:rgb(225, 225, 247);}
   #Summary {background-color:rgb(225, 225, 247);}
 
   .img-table {
@@ -50,5 +50,16 @@
 }
 .border-blue {
   border:1px rgba(21, 82, 117, 0.788)
-  
+}
+.img-small {
+  width: 12rem;
+  height: auto;
+}
+.img-smallSum {
+  width: 17rem;
+  height: auto;
+}
+.img-middle {
+  display: flex;
+  align-items: center;
 }
