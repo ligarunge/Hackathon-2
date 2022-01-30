@@ -25,10 +25,12 @@ document.getElementById("defaultOpen").click();
 const removeButton = document.getElementsByClassName('btn-remove');
 for (let i = 0; i < removeButton.length; i++) {
   let button = removeButton[i];
+  let productToRemove = document.getElementsByClassName('summaryProducts')[i];
   button.addEventListener('click', function(event) {
    let buttonClicked = event.target;
    buttonClicked.parentElement.parentElement.remove();
-   document.getElementsByClassName('summaryProducts')[i].remove();
+   productToRemove.remove();
+   let existingTotal = parseFloat(document.getElementById('cartTotal').innerText);
    
   })
  
@@ -40,10 +42,10 @@ function addItem1() {
   document.getElementById('qty').innerText = newQty;
   let price = parseFloat(document.getElementById('price').innerText);
   let itemsTotal = (newQty * price).toFixed(2);
-  document.getElementById('totalItems').innerText = itemsTotal;
+  document.getElementById('totalItems').innerText = itemsTotal + ' €';
   let defaultTotal = parseFloat(document.getElementById('cartTotal').innerText);
   let newTotal = (defaultTotal + price).toFixed(2);
-  document.getElementById('cartTotal').innerText = newTotal;
+  document.getElementById('cartTotal').innerText = newTotal + ' €';
 }
 function subtractItem1() {
   let defaultQty = parseFloat(document.getElementById('qty').innerText);
@@ -52,10 +54,10 @@ function subtractItem1() {
   document.getElementById('qty').innerText = newQty;
   let price = parseFloat(document.getElementById('price').innerText);
   let itemsTotal = (newQty * price).toFixed(2);
-  document.getElementById('totalItems').innerText = itemsTotal;
+  document.getElementById('totalItems').innerText = itemsTotal + ' €';
   let defaultTotal = parseFloat(document.getElementById('cartTotal').innerText);
   let newTotal = (defaultTotal - price).toFixed(2);
-  document.getElementById('cartTotal').innerText = newTotal;
+  document.getElementById('cartTotal').innerText = newTotal + ' €';
   }
   else {
     document.getElementById('qty').innerText = 0;
@@ -69,10 +71,10 @@ function addItem2() {
   document.getElementById('qty2').innerText = newQty;
   let price = parseFloat(document.getElementById('price2').innerText);
   let itemsTotal = (newQty * price).toFixed(2);
-  document.getElementById('totalItems2').innerText = itemsTotal;
+  document.getElementById('totalItems2').innerText = itemsTotal + ' €';
   let defaultTotal = parseFloat(document.getElementById('cartTotal').innerText);
   let newTotal = (defaultTotal + price).toFixed(2);
-  document.getElementById('cartTotal').innerText = newTotal;
+  document.getElementById('cartTotal').innerText = newTotal + ' €';
 }
 function subtractItem2() {
   let defaultQty = parseFloat(document.getElementById('qty2').innerText);
@@ -81,10 +83,10 @@ function subtractItem2() {
   document.getElementById('qty2').innerText = newQty;
   let price = parseFloat(document.getElementById('price2').innerText);
   let itemsTotal = (newQty * price).toFixed(2);
-  document.getElementById('totalItems2').innerText = itemsTotal;
+  document.getElementById('totalItems2').innerText = itemsTotal + ' €';
   let defaultTotal = parseFloat(document.getElementById('cartTotal').innerText);
   let newTotal = (defaultTotal - price).toFixed(2);
-  document.getElementById('cartTotal').innerText = newTotal;
+  document.getElementById('cartTotal').innerText = newTotal + ' €';
   }
   else {
     document.getElementById('qty2').innerText = 0;
@@ -97,10 +99,10 @@ function addItem3() {
   document.getElementById('qty3').innerText = newQty;
   let price = parseFloat(document.getElementById('price3').innerText);
   let itemsTotal = (newQty * price).toFixed(2);
-  document.getElementById('totalItems3').innerText = itemsTotal;
+  document.getElementById('totalItems3').innerText = itemsTotal + ' €';
   let defaultTotal = parseFloat(document.getElementById('cartTotal').innerText);
   let newTotal = (defaultTotal + price).toFixed(2);
-  document.getElementById('cartTotal').innerText = newTotal;
+  document.getElementById('cartTotal').innerText = newTotal + ' €';
 }
 function subtractItem3() {
   let defaultQty = parseFloat(document.getElementById('qty3').innerText);
@@ -109,10 +111,10 @@ function subtractItem3() {
   document.getElementById('qty3').innerText = newQty;
   let price = parseFloat(document.getElementById('price3').innerText);
   let itemsTotal = (newQty * price).toFixed(2);
-  document.getElementById('totalItems3').innerText = itemsTotal;
+  document.getElementById('totalItems3').innerText = itemsTotal + ' €';
   let defaultTotal = parseFloat(document.getElementById('cartTotal').innerText);
   let newTotal = (defaultTotal - price).toFixed(2);
-  document.getElementById('cartTotal').innerText = newTotal;
+  document.getElementById('cartTotal').innerText = newTotal + ' €';
   }
   else {
     document.getElementById('qty3').innerText = 0;
