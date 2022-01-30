@@ -13,7 +13,7 @@
   
   /* Change background color of buttons on hover */
   .tablink:hover {
-    background-color: rgba(87, 120, 139, 0.788);
+    background-color: rgba(163, 167, 182, 0.788);
   }
   
   /* Set default styles for tab content */
@@ -25,28 +25,29 @@
   }
   
   /* Style each tab content individually */
-  #Products {background-color:rgb(225, 225, 247);}
-  #Address {background-color:rgb(225, 225, 247);}
-  #Summary {background-color:rgb(225, 225, 247);}
+  #Products {background-color:rgb(227, 227, 235);}
+  #Address {background-color:rgb(236, 236, 250);}
+  #Summary {background-color:rgb(236, 236, 250);}
 
   .img-table {
     display: block; 
     width: 6rem; 
     height: auto;
 }
-.btn-xs {
-    
+.btn-xs { 
     width:2rem;
     height:2rem;
     background-color: lightyellow;
-    text-align:center;
-    line-height:1em;   
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+    line-height:0.1em;   
 }
 .table-height {
   min-height: 35rem;
 }
 .text-blue {
-  color: rgba(21, 82, 117, 0.788);
+  color: rgba(11, 69, 102, 0.788);
 }
 .border-blue {
   border:1px rgba(21, 82, 117, 0.788)
