@@ -52,6 +52,7 @@ color: rgba(21, 82, 117, 0.788);
     width: 200px;
     height: 200px
 }
+
 .card-text {
     font-size:small;
     text-align:justify;
@@ -76,7 +77,6 @@ h5 {
 #texts {
     padding-left: 20px;
     margin-right: -30px;
-
 }
 
 .body-line {
@@ -105,23 +105,14 @@ h5 {
     height: 440px;
 }
 
-
-#productImg {
-    opacity: .6;
-    cursor: pointer;
-}
-
-
 #productImg img:hover {
     opacity: 1;             
 }
-
 
 #productImg img {
     filter: grayscale(70%);
     transition: 1s;
 }
-
 
 .gallery {
     width: 150px;
@@ -130,19 +121,16 @@ h5 {
     cursor: pointer;
 }
 
-
 #productImg {
     padding: 10px 10px 10px 0;
     width: 150px;
     height: 150px;
 }
 
-
 #productImg {
     opacity: .6;
     cursor: pointer;
 }
-
 
 #productImg img:hover {
     opacity: 1;
