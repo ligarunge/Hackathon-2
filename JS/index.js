@@ -144,6 +144,7 @@ for (let i = 0; i < removeButton.length; i++) {
   newCartTotal = existingTotal - productToRemoveTotal;
   document.getElementById('cartTotal').innerText = newCartTotal + ' €';
   document.getElementById('summaryCartTotal').innerText = newCartTotal + ' €';
+  
   })
 }
 
