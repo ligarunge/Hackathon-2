@@ -147,7 +147,9 @@ h5 {
     margin-right: 0;
     margin-left: 5px;
     border-color: rgba(21, 82, 117, 0.788)!important;
-    font-size: smaller;
+    text-decoration: none;
+    font-size: large;
+    color: rgba(21, 82, 117, 0.788);
 }
 
 #priceLine {
