@@ -24,19 +24,6 @@ document.getElementById("defaultOpen").click();
 
 
 
-const removeButton = document.getElementsByClassName('btn-remove');
-for (let i = 0; i < removeButton.length; i++) {
-  let button = removeButton[i];
-  let productToRemove = document.getElementsByClassName('summaryProducts')[i];
-  button.addEventListener('click', function(event) {
-   let buttonClicked = event.target;
-   buttonClicked.parentElement.parentElement.remove();
-   productToRemove.remove();
-   let existingTotal = parseFloat(document.getElementById('cartTotal').innerText);
-   
-  })
- 
-}
 
 function addItem1() {
   let defaultQty = parseFloat(document.getElementById('qty').innerText);
@@ -141,6 +128,22 @@ function subtractItem3() {
   }
 }
 
+const removeButton = document.getElementsByClassName('btn-remove');
+for (let i = 0; i < removeButton.length; i++) {
+  let button = removeButton[i];
+  let productToRemove = document.getElementsByClassName('summaryProducts')[i];
+  let productToRemoveTotal = parseFloat(document.getElementsByClassName('totalItem')[i].innerText);
+  let existingTotal = parseFloat(document.getElementById('cartTotal').innerText);
+  console.log(productToRemoveTotal);
+  console.log(existingTotal);
+  button.addEventListener('click', function(event) {
+   let buttonClicked = event.target;
+   buttonClicked.parentElement.parentElement.remove();
+   productToRemove.remove();
+  newCartTotal = existingTotal - productToRemoveTotal;
+  document.getElementById('cartTotal').innerText = newCartTotal + ' €';
+  })
+}
 
 
 
