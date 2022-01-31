@@ -129,11 +129,12 @@ function subtractItem3() {
 }
 
 const removeButton = document.getElementsByClassName('btn-remove');
+let existingTotal = parseFloat(document.getElementById('cartTotal').innerText);
 for (let i = 0; i < removeButton.length; i++) {
   let button = removeButton[i];
   let productToRemove = document.getElementsByClassName('summaryProducts')[i];
   let productToRemoveTotal = parseFloat(document.getElementsByClassName('totalItem')[i].innerText);
-  let existingTotal = parseFloat(document.getElementById('cartTotal').innerText);
+  
   console.log(productToRemoveTotal);
   console.log(existingTotal);
   button.addEventListener('click', function(event) {
@@ -141,10 +142,11 @@ for (let i = 0; i < removeButton.length; i++) {
    
    buttonClicked.parentElement.parentElement.remove();
    productToRemove.remove();
-  newCartTotal = existingTotal - productToRemoveTotal;
-  document.getElementById('cartTotal').innerText = newCartTotal + ' €';
-  document.getElementById('summaryCartTotal').innerText = newCartTotal + ' €';
-  
+  newTotal = existingTotal - productToRemoveTotal;
+  document.getElementById('cartTotal').innerText = newTotal + ' €';
+  document.getElementById('summaryCartTotal').innerText = newTotal + ' €';
+  console.log(newTotal);
+  existingTotal = newTotal;
   })
 }
 
