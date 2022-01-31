@@ -64,3 +64,8 @@
   display: flex;
   align-items: center;
 }
+.btn-address {
+  background-color: rgba(87, 120, 139, 0.788);
+  color: white;
+  font-weight: normal;
+}

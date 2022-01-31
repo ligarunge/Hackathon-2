@@ -138,6 +138,7 @@ for (let i = 0; i < removeButton.length; i++) {
   console.log(existingTotal);
   button.addEventListener('click', function(event) {
    let buttonClicked = event.target;
+   
    buttonClicked.parentElement.parentElement.remove();
    productToRemove.remove();
   newCartTotal = existingTotal - productToRemoveTotal;
@@ -146,5 +147,13 @@ for (let i = 0; i < removeButton.length; i++) {
   })
 }
 
+function addAddress() {
+  
+  let newAddress = document.getElementById('billingAddress').value;
+  console.log(newAddress);
+  document.getElementById('SummaryBillingAddress').innerText = newAddress;
+  document.getElementById('billingAddress').value = '';
+  
+}
 
 

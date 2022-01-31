@@ -126,7 +126,8 @@
 
                 <div class="col-md-5">
                     <span class="row h5 text-blue" id="enterBillingAddress">Billing address</span>
-                    <span class="row"><textarea name="" id="" cols="30" rows="10"></textarea></span>
+                    <span class="row"><textarea name="" id="billingAddress" cols="30" rows="10"></textarea></span>
+                    <span class="row mt-3"><button class="btn btn-outline-secondary btn-address" onclick="addAddress()">Add address</button></span>
                 </div>
             </div>
             <div class="row img-middle">
@@ -141,12 +142,12 @@
             <div class="row">
                 <div class="col-4">
                     <div><span class="row h5 text-blue">Shipping address</span></div>
-                    <div><span class="row">Antonijas iela</span></div>
+                    <div><span class="row">Antonijas iela 133</span></div>
                     <div><span class="row">Riga</span></div>
                     <div><span class="row">Latvija</span></div>
                     <div><span class="row">LV-1022</span></div>
-                    <div><span class="row h5 text-blue mt-3" id="billingAddress">Billing address</span></div>
-                    <div><span class="row"></span></div>
+                    <div><span class="row h5 text-blue mt-3" >Billing address</span></div>
+                    <div><span class="row" style="text-align: left;" id="SummaryBillingAddress"></span></div>
                     <div><span class="row"></span></div>
 
                     <div><img src="images/cat-shopping.png" class="img-fluid img-smallSum rounded" alt="..."></div>
